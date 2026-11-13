@@ -17,7 +17,7 @@ wget -O ~/Documents/forge-1.12.2-14.23.5.2859-installer.jar \
 "https://maven.minecraftforge.net/net/minecraftforge/forge/1.12.2-14.23.5.2859/forge-1.12.2-14.23.5.2859-installer.jar"
 
 echo ${YELLOW} "Checking for Java updates, If missing- openjdk-21-jdk Download will start." ${ENDCOLOR}
-sudo apt update openjdk-21-jdk || sudo apt install openjdk-21-jdk
+sudo apt upgrade openjdk-21-jdk || sudo apt install openjdk-21-jdk
 
 
 mkdir -p "$HOME/Documents/Minecraft-Server"
